@@ -1,0 +1,820 @@
+html{
+    background-color: rgb(245, 245, 245);
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+   
+}
+
+:root{
+    --primary-color: darkorange;
+    --secondary-color: rgb(245, 245, 245);
+}
+
+button {
+    transition: 0.3s ease-in-out 0.01s;
+}
+
+header button:hover {
+    background-color: rgb(192, 81, 2);
+}
+
+main .brands img {
+    transition: width 0.5s ease-in-out 0.1s;
+}
+
+main .brands img:hover {
+    width: 15%;
+}
+
+.title button:hover {
+    background-color: rgb(232, 232, 232);
+}
+
+.coursetitle button:hover {
+    background-color: rgb(232, 232, 232);
+}
+
+.ourtest button:hover {
+    background-color: rgb(232, 232, 232);
+}
+
+.course button:hover {
+    background-color: var(--primary-color);
+}
+
+.alltest .testimonial .client button:hover {
+    font-size: 0.75rem;
+    background-color: white;
+}
+
+.plans .plantype button:hover {
+    color: rgb(155, 155, 155);
+    font-size: 1rem;
+}
+
+.faq .faqoption button:hover {
+    rotate: 90deg;
+}
+
+.benefits .kinds button:hover {
+    rotate: 90deg;
+}
+header .topbar p {
+    animation: colorimpact 0.6s ease-out infinite;
+}
+
+@keyframes colorimpact {
+    0% {
+        transform: scale(1);
+        color: #ffffff;
+        text-shadow: 0 0 5px rgba(29, 33, 35, 0.7);
+    }
+
+    50% {
+        transform: scale(1.1);
+        color: #f7ff02;
+        text-shadow: 0 0 20px rgba(78, 78, 2, 0.7);
+    }
+
+    100% {
+        transform: scale(1);
+        color: #035d28;
+        text-shadow: 0 0 10px rgba(46, 204, 113, 0.7);
+    }
+}
+@media screen and (max-width: 600px) {
+
+    /* header section */
+    .topbar {
+        display: flex;
+        background-color: var(--primary-color);
+        color: aliceblue;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        margin: 10px;
+        margin-top: 50px;
+        height: 40px;
+    }
+
+    .logo {
+        margin: 5px 10px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .login {
+        background-color: var(--primary-color);
+        padding: 1rem 2rem;
+        margin: 0 1.5rem;
+        border-radius: 8px;
+        color: rgb(255, 255, 255);
+        font-size: 1rem;
+        border-style: none;
+    }
+
+    .hambmenu {
+        border-style: none;
+        background-color: transparent;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .navbar div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 1rem;
+    }
+    .banner{
+        padding:1rem;
+        line-height: 1.7rem;
+    }
+    .banner h1{
+        line-height: 3rem;
+    }
+    /* body section  */
+
+    .fundamentals, .uxdesign, .mobileapp, .graphicd, .frontwd{
+        display:flex;
+        flex-direction: column;
+        margin: 1rem;
+        padding: 1rem 1.5rem;
+        background-color: white;
+        border-radius: 8px;
+    }
+    .courses h3{
+        font-size: 1.5rem;
+    }
+    .courses p{
+        line-height: 1.5rem;
+        
+    }
+    .courses button{
+        border-style: none;
+        padding: 1rem;
+        background-color: var(--secondary-color);
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        border: 1px solid rgb(230, 230, 230)
+    }
+    .coursepics{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .coursepics img{
+        display: flex;
+        border-radius: 10px;
+        width: 30%;
+        height: 110px;
+        object-fit: cover;
+        object-position: center;
+        margin:0.5rem
+    }
+    .courses .time{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .courses .time p{
+        border: 1px solid rgb(235, 235, 235);
+        border-radius: 8px;
+        font-size: 0.8rem;
+        height: 40px;
+        padding: 0 20px;
+        margin-right: 10px;
+        align-content: center;
+    }
+
+    .curriculum{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid var(--secondary-color);
+        border-radius: 8px;
+        line-height: 0.75rem;
+
+    }
+    .curriculum h3{
+       border-bottom: 1px solid var(--secondary-color);
+        margin: 0;
+        padding: 1.5rem 1.5rem;
+       
+    }
+
+    .curriculum div{
+        border-top: 1px solid var(--secondary-color);
+        padding: 0 0.5rem;
+        margin: 0 1rem;
+        
+    }
+
+
+    /* footer section  */
+    footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 1rem;
+        margin: 0;
+        background-color: white;
+    }
+
+    footer h4 {
+        margin-bottom: 1rem;
+    }
+
+    footer img {
+        width: 45px;
+        margin-bottom: 1rem;
+    }
+
+    footer ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    footer .contact ul li {
+        line-height: 1.5rem;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: inherit;
+        line-height: 1.7rem;
+    }
+
+    footer .links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer .links div {
+        margin-right: 3rem;
+    }
+
+    footer p {
+        text-align: center;
+        padding-top: 2rem;
+        border-top: 1px solid var(--secondary-color);
+    }
+
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+   
+    /* header section tablet  */
+    .topbar {
+        display: flex;
+        background-color: var(--primary-color);
+        color: aliceblue;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        margin: 10px;
+        margin-top: 1rem;
+        height: 40px;
+    }
+
+    .logo {
+        margin: 5px 10px;
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+    .login {
+        background-color: var(--primary-color);
+        padding: 0.5rem 1.5rem;
+        margin: 0 1.5rem;
+        border-radius: 8px;
+        color: rgb(255, 255, 255);
+        font-size: 0.75rem;
+        border-style: none;
+    }
+    .navbar div p{
+        font-size: 0.75rem;
+    }
+    .navbar div{
+       margin-left: auto;
+    }
+    .hambmenu {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: auto;
+        padding: 0 2rem;
+    }
+    .navbar ul{
+        justify-content: space-evenly;
+        font-size: 0.7rem;
+        width: 45%;
+    }
+    .navbar a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .navbar div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    .banner{
+        padding: 0.5rem 2.5rem;
+        line-height: 1.2rem;
+        margin-bottom: 3rem;
+
+    }
+    .banner h1{
+        line-height: 3rem;
+        font-size: 1.5rem;
+        
+    }
+    .banner p{
+        font-size: 0.75rem;
+    }
+    .banner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: 1px solid rgb(230, 230, 230);
+        
+        
+    }
+    /* body section tablet  */
+    .fundamentals, .uxdesign, .mobileapp, .graphicd, .frontwd{
+        display:flex;
+        flex-direction: column;
+        margin: 1rem;
+        padding: 1rem 1.5rem;
+        background-color: white;
+        border-radius: 8px;
+    }
+    .title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 1rem;
+    }
+    .courses h3{
+        font-size: 1remrem;
+    }
+    .courses p{
+        line-height: 1.5rem;
+        font-size: 0.75rem;
+        width: 80%;
+    }
+    .courses button{
+        align-self: center;
+        width: 20%;
+        border-style: none;
+        font-size: 0.6rem;
+        padding: 0.5rem 0;
+        background-color: var(--secondary-color);
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        border: 1px solid rgb(230, 230, 230)
+    }
+    .coursepics{
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        gap: 0.5rem;
+        
+        
+    }
+    .coursepics img{
+        width: 100%;
+        border-radius: 10px;
+        height: 180px ;
+        object-fit: cover;
+        object-position: center;
+        
+    }
+    .courses .time{
+        display: flex;
+        width: 25%;
+       
+    }
+    .courses .time p{
+        border: 1px solid rgb(235, 235, 235);
+        border-radius: 8px;
+        font-size: 0.8rem;
+        text-align: center;
+        margin-right: 0.5rem;
+    }
+    
+
+    .curriculum{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 33% 66%r;
+        border: 1px solid var(--secondary-color);
+        border-radius: 8px;
+        line-height: 0.75rem;
+        margin-right: 0.75rem;
+
+    }
+    .curriculum h3{
+        grid-column: 1/6;
+        border-bottom: 1px solid var(--secondary-color);
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        font-size: 0.8rem;
+    }
+  
+   .author{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+   }
+
+
+    .curriculum div{
+        border-right: 1px solid var(--secondary-color);
+        padding-left: 1rem;
+        margin-bottom: 0.7rem;
+    }
+    .curriculum div p{
+        line-height: 0.9rem;
+        font-size: 0.7rem;
+        padding-bottom: 0;
+        
+    }
+
+    .curriculum div h2{
+        line-height: 0;
+    }
+
+
+  /* footer section tablet  */
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 0;
+        background-color: white;
+    }
+
+    footer h4 {
+        margin-bottom: 1rem;
+    }
+
+   
+
+    footer ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    footer .contact ul li {
+        line-height: 1.5rem;
+        font-size: 0.75rem;
+    }
+
+    
+
+    footer .links div {
+        margin-right: 3rem;
+    }
+    footer a {
+        text-decoration: none;
+        color: inherit;
+        line-height: 1.2rem;
+        font-size: 0.75rem;
+    }
+
+    footer .links {
+        display: flex;
+        flex-direction: row;
+    }
+    footer img{
+       width: 20%;
+    }
+    footer p {
+        text-align: center;
+        padding-top: 2rem;
+        border-top: 1px solid var(--secondary-color);
+        font-size: 0.75rem;
+    }
+    footer section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 1rem;
+        margin-right: 2rem;
+
+        
+    }
+    .contact{ 
+        margin-top: 1.5rem;
+        padding-right: 6rem;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  
+    
+ 
+   body{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+   }
+
+    /* header section desktop  */
+    .topbar {
+        display: flex;
+        background-color: var(--primary-color);
+        color: aliceblue;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        margin: 10px;
+        margin-top: 1rem;
+        height: 40px;
+    }
+
+    .logo {
+        margin: 5px 10px;
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+    .login {
+        background-color: var(--primary-color);
+        padding: 0.5rem 1.5rem;
+        margin: 0 1.5rem;
+        border-radius: 8px;
+        color: rgb(255, 255, 255);
+        font-size: 0.75rem;
+        border-style: none;
+    }
+    .navbar div p{
+        font-size: 0.75rem;
+    }
+    .navbar div{
+       margin-left: auto;
+    }
+    .hambmenu {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: auto;
+        padding: 0 3rem;
+    }
+    .navbar ul{
+        justify-content: space-evenly;
+        font-size: 0.7rem;
+        width: 35%;
+    }
+    .navbar a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .navbar div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    .banner{
+        padding: 0.5rem 2.5rem;
+        line-height: 1.2rem;
+        margin-bottom: 3rem;
+
+    }
+    .banner h1{
+        line-height: 3rem;
+        font-size: 1.5rem;
+        
+    }
+    .banner p{
+        font-size: 0.75rem;
+    }
+    .banner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: 1px solid rgb(230, 230, 230);
+        
+        
+    }
+    /* body section tablet  */
+    .fundamentals, .uxdesign, .mobileapp, .graphicd, .frontwd{
+        display:flex;
+        flex-direction: column;
+        margin: 1rem;
+        padding: 1rem 1.5rem;
+        background-color: white;
+        border-radius: 8px;
+    }
+    .title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 1rem;
+    }
+    .courses h3{
+        font-size: 1remrem;
+    }
+    .courses p{
+        line-height: 1.5rem;
+        font-size: 0.75rem;
+        width: 80%;
+    }
+    .courses button{
+        align-self: center;
+        width: 20%;
+        border-style: none;
+        font-size: 0.6rem;
+        padding: 0.5rem 0;
+        background-color: var(--secondary-color);
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        border: 1px solid rgb(230, 230, 230)
+    }
+    .coursepics{
+        display: grid;
+        grid-template-columns: 32.5% 32.5% 32%;
+        gap: 0.5rem;
+        
+        
+    }
+    .coursepics img{
+        width: 100%;
+        border-radius: 10px;
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+        
+    }
+    .courses .time{
+        display: flex;
+        width: 25%;
+       
+    }
+    .courses .time p{
+        border: 1px solid rgb(235, 235, 235);
+        border-radius: 8px;
+        font-size: 0.8rem;
+        text-align: center;
+        margin-right: 0.5rem;
+    }
+    
+
+    .curriculum{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 33% 66%r;
+        border: 1px solid var(--secondary-color);
+        border-radius: 8px;
+        line-height: 0.75rem;
+        margin-right: 0.75rem;
+
+    }
+    .curriculum h3{
+        grid-column: 1/6;
+        border-bottom: 1px solid var(--secondary-color);
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        font-size: 0.8rem;
+    }
+  
+   .author{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+   }
+
+
+    .curriculum div{
+        border-right: 1px solid var(--secondary-color);
+        padding-left: 1rem;
+        margin-bottom: 0.7rem;
+    }
+    .curriculum div p{
+        line-height: 0.9rem;
+        font-size: 0.7rem;
+        padding-bottom: 0;
+        
+    }
+
+    .curriculum div h2{
+        line-height: 0;
+    }
+
+
+
+
+   /* footer section desktop  */
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 0;
+        background-color: white;
+    }
+
+    footer h4 {
+        margin-bottom: 1rem;
+    }
+
+    footer img {
+        width: 45px;
+        margin-bottom: 1rem;
+    }
+
+    footer ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    footer .contact ul li {
+        line-height: 1.5rem;
+        font-size: 0.75rem;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: inherit;
+        line-height: 1.2rem;
+        font-size: 0.75rem;
+    }
+
+    footer .links {
+        display: flex;
+        flex-direction: row;
+    }
+    footer img{
+       width: 20%;
+    }
+
+    footer .links div {
+        margin-right: 3rem;
+    }
+
+    footer p {
+        text-align: center;
+        padding-top: 2rem;
+        border-top: 1px solid var(--secondary-color);
+        font-size: 0.75rem;
+    }
+    footer section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 1rem;
+        margin-right: 2rem;
+
+        
+    }
+    .contact{ 
+        margin-top: 1.5rem;
+        padding-right: 6rem;
+    }
+}
